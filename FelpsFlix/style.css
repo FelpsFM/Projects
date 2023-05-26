@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body{
+    font-family: "Bebas Neue", cursive;
+    background-color: rgb(22, 21, 21);
+    text-align: center;
+}
+.main-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 4%;
+    border: transparent;
+}
+h1{
+    color: white;
+}
+.itens{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 180px;
+    height: 180px;
+    max-width: 500px;
+    border-radius: 8px;
+    flex-direction: column;
+    border: 1px solid;
+}
+.itens:hover{
+    border: 0.5px solid;
+    border-color: rgba(255, 255, 255, 0.747);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: flex;
+}
+ul{
+    display: flex;
+  list-style-type: none;
+}
+legend{
+    color: rgb(148, 143, 143);
+    justify-content: space-evenly;
+    display: flex;
+}
+button{
+    display: flex;
+  align-items: center;
+  color: white;
+  background-color: black;
+  border-color: white;
+  border-radius: 8px;
+  padding-inline: 35px;
+  padding-block: 10px;
+}
+button:hover{
+    color: black;
+  padding-inline: 35px;
+  padding-block: 10px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.8s;
+}
+
+#logo{
+    color: rgb(21, 21, 184);
+    font-size: 75px;
+}
+img{
+    border-radius: 8px;
+}
+#plus-one{
+    object-fit: scale-down;
+    background-color: rgb(10, 10, 10);
+}
+div{
+    box-sizing: border-box;
+}
