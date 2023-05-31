@@ -1,195 +1,246 @@
-/* ------------------------------- Coloque sua estilização aqui ------------------------------- */
 header {
     box-sizing: border-box;
-  height: 80px;
-  width: 100vw;
-
-  background-color: var(--background);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50%;
-
-  box-shadow: var(--shadow);
-
-  position: fixed;
-
-  left: 0px;
-  top: 0px;
-  border-bottom: 2px solid #4c6ef5;
-
-  z-index: 1;
-}
-
-header p {
-    color: var(--text-secondary);
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.mainDiv {
-    display: flex;
-    flex-direction: column;
-    text-align:center;
-    align-items: center;
-    padding: 250px 236px;
-   
-    left: 0px;
-    top: 100px;
-
-    background: #212529;
-}
-
-h1 span{
-    color: #4c6ef5;
-    gap: 100px;
-}
-
-.btnAboutUs {
-    box-sizing: border-box;
-    margin-top: 20px;
-    background-color: #4c6ef5;
-    padding: 20px 18px;
-    gap: 10px;
-    width: 133px;
-    height: 60px;
-}
-
-h1 {
-    height: 60px;
-width: 770px;
-left: 479px;
-top: 367px;
-border-radius: nullpx;
-
-}
-
-.divQuem {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px ;
-    gap: 400px;
-    
-    height: 150px;
-    left: 0px;
-    top: 881px;
-    
-    background: #191C1F;
-}
-
-.divQuem span {
-    display: block;
-    text-align: start;
-    width: 50%;
-    color: #aaa8a8;
-}
-
-.quem {
- padding-left: 236px;
-
-}
-
-.primeiraDiv {
-    display: block;
-    box-sizing: border-box;
-    gap: 2px;
-    margin: 20px;
-}
-
-.segundaDiv{
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.segundaDiv h3 {
-    text-align: center;
-}
-
-.feedbackDiv {
-    display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.feedbackDiv span {
-    display: block;
-    box-sizing: border-box;
-    width: 30%;
-}
-
-.studantFeed {
- display: block;
-  box-sizing: border-box;
-  padding: 8px;
-  width:70%;
-}
-
-.comments {
-    display: flex;
-    flex-direction: column;
-    align-items:initial;
-    padding: 50px 40px;
-    margin: 40px;
-    width: 250px;
-    height: fit-content;
-    background: #4C6EF5;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.comments p {
-    color: var(--primary);
-}
-
-footer {
-    display: block;
-    padding: 20px;
-    margin: 0px;
-    left: 0px;
-    top: 100%;
-    background: #191C1F;
-    text-align: center;
-}
-
-/* Botões */
-
-button:hover {
-    cursor: pointer;
-}
-
-.btnSubmit {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 15px 30px;
-    color: #868e96;
-  
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-  
+    height: 80px;
+    width: 100vw;
     background-color: var(--background);
-  
-    border: 1px solid #868e96;
-}
-
-.btnSubmit:hover {
-    background-color: black;
-    color: whitesmoke;
-}
-
-.btnSubmitDois {
-    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
+    box-shadow: var(--shadow);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    border-bottom: 2px solid #4c6ef5;
+    z-index: 1;
+    }
+    
+    .header__title {
+    width: 200px;
+    height: 20.8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: white;
+    font-size: 20px;
+    }
+    
+    
+    
+    .header__btnSubmit {
+      width: 177px;
+      height: 21px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 150%;
+      color: #EDF2FF;
+      flex: none;
+      order: 0;
+      flex-grow: 0;;
+    }
+    
+    .mainDiv {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding: 250px 236px;
+      left: 0px;
+      top: 100px;
+      background: #212529;
+    }
+    
+    .mainDiv__title span {
+      color: #4c6ef5;
+      gap: 100px;
+    }
+    
+    .mainDiv__btnAboutUs {
+      box-sizing: border-box;
+      margin-top: 20px;
+      background-color: #4c6ef5;
+      padding: 20px 18px;
+      gap: 10px;
+      width: 133px;
+      height: 60px;
+    }
+    
+    .divWho {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      gap: 400px;
+      height: 150px;
+      left: 0px;
+      top: 881px;
+      background: #191C1F;
+    }
+    
+    .divWho__title {
+      font-size: 28px;
+      line-height: 140%;
+      color: #EDF2FF;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      padding-left: 236px;
+    }
+    
+    .divWho__description {
+      display: block;
+      text-align: start;
+      width: 50%;
+      color: #aaa8a8;
+      padding-left: 180px;
+    }
+    
+    .primeiraDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 33px;
+      width: 473px;
+      height: 271px;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+    
+    .primeiraDiv__title {
+      color: #EDF2FF;
+      font-size: 30px;
+    }
+    
+    .segundaDiv {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 60px;
+      width: 614px;
+      height: 968px;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+    
+    .segundaDiv__subTitle {
+      text-align: center;
+      color: EDF2FF;
+    }
+    
+    .feedback {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    
+    ul {
+      width: 746px;
+      height: 200px;
+    }
+    
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    
+    .feedback__student__class{
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      height: 100px;
+      padding-bottom: 80px;
+    }
+    
+    .feedback__content {
+      padding-top: 17px;
+      padding-left: 72px;
+    }
+    
+    .comments {
+      display: flex;
+      flex-direction: column;
+      align-items: initial;
+      padding: 50px 40px;
+      margin: 40px;
+      width: 250px;
+      height: fit-content;
+      background: #4C6EF5;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+    
+    .comments__title {
+      color: #F8F9FA
+    }
+    
+    .comments__description {
+      color: #EDF2FF;
+    }
+    
+    footer {
+     display: flex;
+     justify-content: center;
+     background-color: #191C1F;
+     margin-top: 230px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+    }
+    
+    
+    /* Botões */
+    
+    button:hover {
+      cursor: pointer;
+    }
+    
+    .header__btnSubmit {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 32px;
+      width: 241px;
+      height: 60px;
+      flex: none;
+      order: 1;
+      color: #d4d4d4;
+      border: 1px solid #e6e7e7;
+      background-color: #191C1F;
+    }
+    
+    
+    .header__btnSubmit:hover {
+      background-color: black;
+      color: rgb(121, 121, 121);
+    }
+    
+    .primeiraDiv__btnSubmit {
     box-sizing: border-box;
-    border: 1px solid var(--background);
-    margin-top: 20px;
-    background-color: #4c6ef5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 20px 30px;
-}
+    margin-top: 20px;
+    gap: 10px;
+    width: 241px;
+    height: 60px;
+    background: #4C6EF5;
+    border: 1px solid var(--background);
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    color: var(--text-primary);
+    }
+    
+    #joinbtn:hover {
+      background-color: #364FC7;
+    }
+    
