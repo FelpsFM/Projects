@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-brand-1: #6741d9;
+  --color-brand-2: #4c3299;
+  --color-brand-3: #f0ecfb;
+
+  --color-grey-1: #212529;
+  --color-grey-2: #495057;
+  --color-grey-3: #adb5bd;
+  --color-grey-4: #e9ecef;
+  --color-grey-5: #f1f3f5;
+  --color-grey-1-opacity-5: rgba(0, 0, 0, 0.5);
+  --fixed-white: #ffffff;
+  --color-mode: #ffffff;
+
+  --font-size-1: 1.25rem;
+  --font-size-2: 1rem;
+  --font-size-3: 0.875rem;
+  --font-size-4: 0.75rem;
+
+  --font-weight-1: 600;
+  --font-weight-2: 500;
+  --font-weight-3: 400;
+
+  --font-line-height-1: 150%;
+
+  --radius-1: 0.5rem;
+  --radius-2: 0.25rem;
+
+  --animation-duration: 0.2s;
+  --animation-type: ease;
+
+  --font-family-1: "Inter", sans-serif;
+  --font-family-2: "Nunito", sans-serif;
+}
+
+body {
+  font-family: var(--font-family-1);
+  max-width: 100vw;
+}
+
+.container {
+  max-width: 43rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 43rem;
+    margin: 0 1rem;
+  }
+}
+
+dialog {
+  width: 90vw;
+  height: 60vh;
+  position: absolute;
+  border-radius: var(--radius-1);
+  top: 7vh;
+  left: 5vw;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.8125rem;
+  border: none;
+  animation: animationmodal var(--animation-duration) var(--animation-type);
+}
+
+.dialog__div--1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+
+.dialog__div--2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dialog__div--title {
+  display: flex;
+  color: var(--color-grey-1);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-1);
+  line-height: var(--font-line-height-1)
+}
+
+.dialog__div--button {
+  height: 1.875rem;
+  width: 2.1875rem;
+  border-radius: .25rem;
+  font-family: var(--font-family-2);
+  border: none;
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-1);
+  color: var(--color-grey-2);
+}
+
+.dialog__text {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-3);
+  line-height: 1.3125rem;
+  color: var(--color-grey-2);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dialog__input {
+  height: 2.75rem;
+  width: 80vw;
+  color: var(--color-grey-2);
+  border: solid var(--color-grey-3);
+  border-radius: var(--radius-1);
+  padding: 1.25rem;
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-2);
+
+}
+
+.dialog__span {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-3);
+}
+
+.dialog__label--entrada {
+  width: 80vw;
+  height: 2rem;
+  border-radius: var(--radius-1);
+  background-color: var(--color-grey-4);
+  color: var(--color-grey-2);
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-size-3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .0625rem;
+}
+
+.dialog__label--saida {
+  width: 80vw;
+  height: 2rem;
+  border-radius: var(--radius-1);
+  background-color: var(--color-grey-4);
+  color: var(--color-grey-2);
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-size-3);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog__div--4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  position: relative;
+
+}
+
+.dialog__div4__button1 {
+  height: 1.9375rem;
+  width: 32vw;
+  background-color: var(--color-grey-5);
+  border: none;
+  border-radius: .3125rem;
+}
+
+.dialog__div4__button2 {
+  height: 1.9375rem;
+  width: 32vw;
+  background-color: var(--color-brand-1);
+  border: none;
+  border-radius: .3125rem;
+  position: absolute;
+  right: 0;
+
+}
+
+.dialog__div4__button2:hover {
+  background-color: var(--color-brand-2);
+  color: var(--fixed-white);
+}
+
+.dialog__div4__button1:hover {
+  background-color: var(--color-grey-4);
+}
+
+.dialog__label--entrada:hover {
+  border-color: var(--color-brand-1);
+  border: solid 1px var(--color-brand-1);
+  outline: .0625rem var(--color-brand-1);
+  background-color: var(--color-grey-5);
+
+}
+
+.dialog__label--saida:hover {
+  border-color: var(--color-brand-1);
+  border: solid 1px var(--color-brand-1);
+  outline: .0625rem var(--color-brand-1);
+  background-color: var(--color-grey-5);
+
+}
+
+.dialog__input:focus {
+  outline-color: var(--color-brand-2);
+
+}
+
+.spanListValuesVazia {
+  width: 100%;
+  height: 20vh;
+  border-radius: var(--radius-1);
+  border: 1px dashed var(--color-brand-1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: var(--color-grey-4);
+
+}
+
+.spanlist__h4 {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-1);
+  font-family: var(--font-family-2);
+
+}
+
+.spanlist__btt {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-1);
+
+  border: none;
+  color: var(--color-grey-2);
+  background-color: var(--color-grey-4);
+
+}
+
+
+@media screen and (min-width:768px) {
+body {
+  position: relative;
+}
+  dialog {
+    height: 350px;
+width: 470px;
+position: absolute;
+top: 30vh;
+left: 35vw;
+border-radius: 8px;
+padding: 24px;
+
+    animation: animationmodal var(--animation-duration) var(--animation-type);
+
+  }
+      
+  .dialog__div--title {
+    display: flex;
+    color: var(--color-grey-1);
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    line-height: var(--font-line-height-1)
+  }
+  .dialog__div--button {
+    height: 1.875rem;
+    width: 2.1875rem;
+    border-radius: .25rem;
+    font-family: var(--font-family-2);
+    border: none;
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    color: var(--color-grey-2);
+  }
+  .dialog__input {
+    height: 2.75rem;
+    width: 100%;
+    color: var(--color-grey-2);
+    border: solid var(--color-grey-3);
+    border-radius: var(--radius-1);
+    padding: 1.25rem;
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
+  
+  }
+  .dialog__span {
+    width: 30%;
+    font-weight: var(--font-weight-2);
+    font-size: var(--font-size-3);
+  }
+  
+  .dialog__label--entrada {
+    width: 25%;
+    height: 2rem;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-2);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .0625rem;
+  }
+  
+  .dialog__label--saida {
+    width: 25%;
+    height: 2rem;
+    border-radius: var(--radius-1);
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-2);
+    font-weight: var(--font-weight-1);
+    font-size: var(--font-size-3);
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  .dialog__div--3{
+    gap: .3125rem;
+    display: flex;
+  }
+  .dialog__div--4 {
+    gap: .9375rem;
+    display: flex;
+    width: 100%;
+  }
+  .dialog__div4__button1 {
+    height: 1.9375rem;
+    width: 20%;
+    background-color: var(--color-grey-5);
+    border: none;
+    border-radius: .3125rem;
+    position: absolute;
+    left: 50%;
+  }
+  
+  .dialog__div4__button2 {
+    height: 1.9375rem;
+    width: 25%;
+    background-color: var(--color-brand-1);
+    border: none;
+    border-radius: .3125rem;
+    position: absolute;
+    right: 0;
+  
+  }
+}
