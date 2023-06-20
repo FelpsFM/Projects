@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/text.css" />
+    <link rel="stylesheet" href="./styles/button.css" />
+    <link rel="stylesheet" href="./styles/flex.css" />
+    <link rel="stylesheet" href="./styles/input.css" />
+    <link rel="stylesheet" href="./pages/home/index.css" />
+    <title>Open Music</title>
+  </head>
+  <body class="container">
+    <main>
+      <nav class="flex align-items-center jc-space-between">
+        <p class="text-title">Open Music</p>
+        <button id="darkMode">
+          <span>
+            <img id="darkModeImg"
+            class="button-tag text-white" 
+            src="" 
+            alt="">
+          </span>
+        </button>
+      </nav>
+      <div class="tags-container flex flex-dir-column">
+        <h2 class="text-subtitle">Gênero Musical </h2>
+        <div class="selectTag">
+          <button class="button-tag filter_item">Todos</button>
+          <button class="button-tag filter_item">Pop</button>
+          <button class="button-tag filter_item">MPB</button>
+          <button class="button-tag filter_item">Forró</button>
+          <button class="button-tag filter_item">Samba</button>
+          <button class="button-tag filter_item">Baião</button>
+          <button class="button-tag filter_item">Rap</button>
+          <button class="button-tag filter_item">Hip-Hop</button>
+          <button class="button-tag filter_item">Rock</button>
+          <button class="button-tag filter_item">Reggae</button>
+          <button class="button-tag filter_item">Country</button>
+          <button class="button-tag filter_item">Gospel</button>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div class="flex align-items-center jc-space-between">
+            <h2 class="text-subtitle">Definir Preço</h2>
+            <p id="rangeValue" class="text-subtitle"></p>
+          </div>
+        </div>
+        <input id="filterPrice" oninput="filterPrice()" class="filterPrice" type="range" value="100" min="0" max="100" step="1">
+      </div>
+      <section>
+        <h2 class="text-subtitle">Álbuns Encontrados</h2>
+        <ul id="albuns" class="flex flex-wrap">
+
+        </ul>
+      </section>
+    </main>
+    <script src="./scripts/theme.js" defer></script>
+    <script src="./pages/home/productsData.js" defer></script>
+    <script src="./pages/home/index.js" defer></script>
+    <script src="./pages/home/filter.js" defer></script>
+  </body>
+</html>

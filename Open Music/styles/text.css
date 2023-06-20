@@ -1,0 +1,23 @@
+.text-title{
+    color: var(--color-grey-1);
+    font-size: var(--font-1);
+}
+
+.text-info{
+    font-size: var(--font-3);
+    color: var(--color-grey-1);
+}
+
+.text-title.dark-mode{
+    color: var(--color-grey-9);
+}
+
+.text-subtitle{
+    font-size: var(--font-2);
+    color: var(--color-grey-1);
+    margin-top: 20px;
+}
+
+.text-subtitle.dark-mode{
+    color: var(--color-grey-9);
+}

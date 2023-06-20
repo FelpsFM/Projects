@@ -1,0 +1,14 @@
+.button-tag{
+    border-radius: var(--radius-1);
+    border: none;
+    background-color: var(--color-grey-8);
+    color: var(--color-grey-2);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.button-tag:hover{
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-8);
+}
+

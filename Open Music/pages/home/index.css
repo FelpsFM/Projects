@@ -1,0 +1,28 @@
+/* Desenvolva sua estilização aqui ... */
+.selectTag{
+    gap: 10px;
+    margin-bottom: 32px;
+}
+.tags-container{
+    gap: 24px;
+    margin-top: 24px;
+}
+#albuns{
+    gap: 25px;
+    border-radius: var(--radius-1);
+}
+
+.card-container{
+    width: 40%;
+    margin: 10px;
+    
+}
+
+.card-content{
+    padding: 16px;
+    background-color: var(--color-grey-7);
+}
+
+img{
+    width: 100%;
+}
