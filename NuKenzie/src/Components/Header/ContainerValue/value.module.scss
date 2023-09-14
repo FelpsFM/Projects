@@ -1,0 +1,41 @@
+.container__main {
+    margin-left: 100px;
+    width: 22.1875rem;
+    height: 6.5625rem;
+    border: solid 2px #E9ECEF;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 1rem;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    
+    .div__value {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.875rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #FD377E;
+        }
+    }
+
+    p {
+        color: #343A40;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+}
